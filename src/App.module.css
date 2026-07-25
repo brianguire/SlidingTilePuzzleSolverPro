@@ -1,0 +1,119 @@
+div.tabControls {
+	display: flex;
+}
+
+div.tabControls div {
+	padding: 5px 30px;
+	border: 3px solid #0E56AB;
+	border-bottom: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	cursor: pointer;
+}
+
+div.selected {
+	background: #0E56AB;
+	color: white;
+}
+
+div.tabBody {
+	background: #F4F5FF;
+	border: 3px solid #0E56AB;
+	padding: 50px;
+}
+
+div.puzzleEditorFlex {
+	display: flex;
+}
+
+div.puzzleEditorFlex > div {
+	margin-right: 50px;
+  width: 500px;
+}
+
+table.rightAlignedTable td {
+  text-align: right;
+}
+
+table.puzzleGrid td {
+  text-align: center;
+  padding: 5px;
+  border-left: medium solid #0E56AB;
+  border-right: medium solid white;
+  border-top: medium solid white;
+  border-bottom: medium solid #0E56AB;
+  height: 50px;
+  width: 50px;
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+button.blueButton {
+	color: white;
+	background-color: #0E56AB;
+}
+
+button.greenButton {
+	color: white;
+	background-color: #317A30;
+}
+
+button.redButton {
+	color: white;
+	background-color: #C21146;
+}
+
+div.displayButtons button {
+	margin-right: 20px;
+	padding: 3px 15px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input:read-only {
+	border: 0px;
+	background: #F4F5FF;
+	font-weight: bold;
+	font-size: 32px;
+	text-align: center;
+	cursor: pointer;
+  height: 45px;
+  width: 45px;
+}
+
+table.puzzleGrid td.emptyTile {
+	background-color: white;
+  border: 0px solid white;
+}
+
+td.emptyTile input {
+	background-color: white;
+}
+
+td.emptyTile input:focus-visible {
+	outline: white auto 0px;
+}
+
+div.move {
+  display:flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+div.move div {
+  height: 30px;
+  width: 120px;
+}

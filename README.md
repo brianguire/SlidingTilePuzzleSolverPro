@@ -1,7 +1,16 @@
-# SlidingTilePuzzleSolverPro
+# React + Vite
 
-by Brian Guire, July 2026
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-NOTE: this is a re-tooling of the original SlidingTilePuzzleSolver using React and TypeScript.  Find the original at https://github.com/brianguire/SlidingTilePuzzleSolver.
+Currently, two official plugins are available:
 
-A sliding tile puzzle that you can try to solve on your own, let the system prompt you toward a solution or let the system solve it for you.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
