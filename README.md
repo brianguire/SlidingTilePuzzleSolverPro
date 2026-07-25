@@ -1,16 +1,7 @@
-# React + Vite
+# SlidingTilePuzzleSolverPro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NOTE: this is a re-tooling of my original SlidingTilePuzzleSolver using React and TypeScript.  You can find it at https://github.com/brianguire/SlidingTilePuzzleSolver.
 
-Currently, two official plugins are available:
+In order to use this project, you will need to install Node (v. 24.18.0 recommended) and NPM (v. 11.16.0 recommended).  Then at the project's root directory run 'npm update'.  See https://docs.npmjs.com/downloading-and-installing-node-js-and-npm?ref=meilisearch-blog for guidance on getting Node and NPM installed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Once you've done that, run 'npm run dev' from the command line to start the server.  Note the localhost:<port_number>.  Go to your browser and enter 'localhost:<port_number>', substituting the appropriate port number.
