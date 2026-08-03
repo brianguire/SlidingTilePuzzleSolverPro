@@ -18,7 +18,8 @@ const Analysis: React.FC = () => {
 		</p>
 		
 		<p><b>Functionality: </b>There is now a larger clickable space in each tile to affect a move.  The app will show 
-            a message if the user tries to use the Auto-solve feature on a solved puzzle.
+            a message if the user tries to use the Auto-solve feature on a solved puzzle.  The solving algorithm has been
+            improved to be more efficient and reliable.  The ability for the user to type in the placement of tiles has been added.
 		</p>
         </div>
     );
