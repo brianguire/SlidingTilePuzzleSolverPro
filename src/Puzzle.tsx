@@ -150,7 +150,7 @@ const Puzzle: React.FC = () => {
         <div>
 		
         <p>Move an adjacent tile into the empty space by clicking on it.  Click the Shuffle button
-            to mix up the puzzle.  Click the Show/Update Solution button to show the solution to the
+            to mix up the puzzle.  Click the Edit button to manually arrange the tiles.  Click the Show/Update Solution button to show the solution to the
             puzzle, or update the solution after moving a few tiles.  Click the Auto-solve button to have the app
             solve the puzzle, moving one tile at a time.
         </p>
