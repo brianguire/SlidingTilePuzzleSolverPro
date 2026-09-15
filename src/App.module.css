@@ -1,5 +1,13 @@
+/* App.module.css */
+/* at the root, width should be the minimum between 100% and 1126px */
+#root {
+	width: min(100%, 1126px);
+}
+
+/* div.tabControls should be a flex that wraps its children */
 div.tabControls {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 div.tabControls div {
@@ -22,19 +30,40 @@ div.tabBody {
 	padding: 50px;
 }
 
+/* div.puzzleEditorFlex should be a grid with two columns in a 
+normal browser window */
 div.puzzleEditorFlex {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
 }
 
+/* div.puzzleEditorFlex should be a grid with one column in a
+browser window with a width of 700px or less */
+@media (max-width: 700px) {
+	div.puzzleEditorFlex {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* div.puzzleEditorFlex > div should have a margin-right of 50px and a width of auto */
 div.puzzleEditorFlex > div {
 	margin-right: 50px;
-  width: 500px;
+  	width: auto;
 }
 
 table.rightAlignedTable td {
   text-align: right;
 }
 
+/* table.puzzleGrid should have a width of either 100% or 360px,
+whichever is smaller */
+table.puzzleGrid {
+  width: min(100%, 360px);
+}
+
+/* table.puzzleGrid td should have a width of 25% and height should
+be the same as the width */
 table.puzzleGrid td {
   text-align: center;
   padding: 5px;
@@ -42,8 +71,8 @@ table.puzzleGrid td {
   border-right: medium solid white;
   border-top: medium solid white;
   border-bottom: medium solid #0E56AB;
-  height: 50px;
-  width: 50px;
+  aspect-ratio: 1;
+  width: 25px;
 }
 
 #center {
