@@ -8,6 +8,7 @@
 div.tabControls {
 	display: flex;
 	flex-wrap: wrap;
+  	gap: 4px;
 }
 
 div.tabControls div {
@@ -19,6 +20,12 @@ div.tabControls div {
 	cursor: pointer;
 }
 
+div.tabControls button {
+  flex: 1 1 10rem;
+  min-height: 44px;
+  padding: 10px 14px;
+}
+
 div.selected {
 	background: #0E56AB;
 	color: white;
@@ -27,7 +34,7 @@ div.selected {
 div.tabBody {
 	background: #F4F5FF;
 	border: 3px solid #0E56AB;
-	padding: 50px;
+  	padding: clamp(16px, 5vw, 50px);
 }
 
 /* div.puzzleEditorFlex should be a grid with two columns in a 
@@ -48,12 +55,12 @@ browser window with a width of 700px or less */
 
 /* div.puzzleEditorFlex > div should have a margin-right of 50px and a width of auto */
 div.puzzleEditorFlex > div {
-	margin-right: 50px;
   	width: auto;
 }
 
 table.rightAlignedTable td {
   text-align: right;
+  table-layout: fixed;
 }
 
 /* table.puzzleGrid should have a width of either 100% or 360px,
@@ -71,8 +78,16 @@ table.puzzleGrid td {
   border-right: medium solid white;
   border-top: medium solid white;
   border-bottom: medium solid #0E56AB;
+  width: 25%;
   aspect-ratio: 1;
-  width: 25px;
+  padding: 0;
+}
+
+table.puzzleGrid input {
+  width: 100%;
+  height: 100%;
+  min-height: 44px;
+  font-size: clamp(1.25rem, 8vw, 2rem);
 }
 
 #center {
@@ -104,9 +119,17 @@ button.redButton {
 	background-color: #C21146;
 }
 
+div.displayButtons > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 div.displayButtons button {
-	margin-right: 20px;
-	padding: 3px 15px;
+	min-height: 44px;
+	margin: 0;
+	flex: 1 1 8rem;
+  	padding: 3px 15px;
 	font-weight: bold;
 	border-radius: 5px;
 	cursor: pointer;
